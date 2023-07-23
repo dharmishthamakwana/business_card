@@ -50,18 +50,12 @@ class _PDFState extends State<PDF> {
                     width: width * 0.15,
                     height: height / 10,
                   ),
-                  // SizedBox(
-                  //   height: height * 0.02,
-                  // ),
                   Text(
                     Global.companyName,
                     style: TextStyle(
                         color: Colors.blueGrey.shade200,
                         fontWeight: FontWeight.bold),
                   ),
-                  // SizedBox(
-                  //   height: height / 300,
-                  // ),
                   Text(
                     Global.tagLine,
                     style: TextStyle(color: Colors.blueGrey.shade300),
