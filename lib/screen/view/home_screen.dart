@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {
           Navigator.of(context).pushNamed('details');
         },
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add,color: Colors.white),
       ),
     );
   }

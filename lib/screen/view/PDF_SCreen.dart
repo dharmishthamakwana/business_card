@@ -7,7 +7,6 @@ import 'package:pdf/widgets.dart' as pw;
 
 import '../utiles/globle.dart';
 
-
 class PDF extends StatefulWidget {
   const PDF({Key? key}) : super(key: key);
 
@@ -16,68 +15,6 @@ class PDF extends StatefulWidget {
 }
 
 class _PDFState extends State<PDF> {
-  // final pdf = pw.Document();
-  // @override
-  // void initState() {
-  //   final image = pw.MemoryImage(
-  //     File(Global.pic!.path).readAsBytesSync(),
-  //   );
-  //   super.initState();
-  //   pdf.addPage(pw.Page(
-  //       pageFormat: PdfPageFormat.a4,
-  //       build: (pw.Context context) {
-  //         return pw.Column(
-  //           children: [
-  //             pw.Container(
-  //               height: 150,
-  //               width: 450,
-  //               child: pw.Column(
-  //                 children: [
-  //                   pw.Row(
-  //                     children: [
-  //                       pw.Padding(
-  //                         padding: const pw.EdgeInsets.only(top: 10, right: 10),
-  //                         child: pw.Container(
-  //                           height: 120,
-  //                           width: 120,
-  //                           child: pw.Image(image, fit: pw.BoxFit.cover),
-  //                           decoration: const pw.BoxDecoration(),
-  //                         ),
-  //                       ),
-  //                       pw.Padding(
-  //                         padding: const pw.EdgeInsets.only(right: 5),
-  //                         child: pw.SizedBox(
-  //                           height: 120,
-  //                           width: 260,
-  //                           child: pw.Column(
-  //                             mainAxisAlignment:
-  //                                 pw.MainAxisAlignment.spaceAround,
-  //                             children: [
-  //                               pw.Row(
-  //                                 children: [
-  //                                   pw.Padding(
-  //                                     padding:
-  //                                         const pw.EdgeInsets.only(left: 5),
-  //                                     child: pw.Text(Global.companyName,
-  //                                         style:
-  //                                             const pw.TextStyle(fontSize: 13)),
-  //                                   ),
-  //                                 ],
-  //                               ),
-  //                             ],
-  //                           ),
-  //                         ),
-  //                       )
-  //                     ],
-  //                   ),
-  //                 ],
-  //               ),
-  //             ),
-  //           ],
-  //         );
-  //       }));
-  // }
-
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -217,7 +154,6 @@ class _PDFState extends State<PDF> {
                               Icons.email_outlined,
                               color: Colors.blueGrey.shade300,
                             ),
-
                             Text(
                               Global.email,
                               style: TextStyle(color: Colors.blueGrey.shade100),
@@ -241,35 +177,6 @@ class _PDFState extends State<PDF> {
                         ),
                       ],
                     ),
-                    // child: Row(
-                    //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    //   children: [
-                    //     Icon(
-                    //       Icons.phone_android_outlined,
-                    //       color: Colors.blueGrey.shade300,
-                    //     ),
-                    //     Text(
-                    //       Global.contact,
-                    //       style: TextStyle(color: Colors.blueGrey.shade100),
-                    //     ),
-                    //     Icon(
-                    //       Icons.email_outlined,
-                    //       color: Colors.blueGrey.shade300,
-                    //     ),
-                    //     Text(
-                    //       Global.email,
-                    //       style: TextStyle(color: Colors.blueGrey.shade100),
-                    //     ),
-                    //     Icon(
-                    //       Icons.location_on_outlined,
-                    //       color: Colors.blueGrey.shade300,
-                    //     ),
-                    //     Text(
-                    //       Global.add,
-                    //       style: TextStyle(color: Colors.blueGrey.shade100),
-                    //     )
-                    //   ],
-                    // ),
                   ),
                 ],
               ),
@@ -277,22 +184,6 @@ class _PDFState extends State<PDF> {
           ],
         ),
       ),
-
-      // floatingActionButton: FloatingActionButton(
-      //   backgroundColor: const Color(0xff235566),
-      //   onPressed: () async {
-      //     Directory? tempDir = await getExternalStorageDirectory();
-      //
-      //     File locate = File('${tempDir!.path}/business.pdf');
-      //
-      //     await locate.writeAsBytes(await pdf.save());
-      //   },
-      //   child: const Icon(
-      //     Icons.download,
-      //     color: Colors.white,
-      //     size: 25,
-      //   ),
-      // ),
     );
   }
 }
